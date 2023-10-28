@@ -87,6 +87,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
 
     <!-- JS da Tela -->
+    <script src="js/config.js?v=<?=time();?>"></script>
     <script src="js/scripts/Login.js?v=<?=time();?>"></script>
 
 
