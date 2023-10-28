@@ -14,9 +14,9 @@ Passos para rodar o sistema.
 3. Criar uma pasta em seu computador, para realizar o clone do repositório.
 4. Clone o Repositório "git clone https://github.com/fabianochaves/RepositorioTestePDV.git".
 5. Após clonar, uma pasta chamada RepositorioTestePDV foi criada, com todos os arquivos do repositório.
-6. Abra o CMD e navegue até a raiz da pasta RepositorioTestePDV.
-7. Ainda no CMD, rode o comando docker-compose up -d
-8. Após concluído o comando do item 6, verifique no Docker Desktop, se está ativo o container "pdv" (back-end, front-end, postgres e pgadmin)
+6. Abra o CMD e navegue até a raiz da pasta RepositorioTestePDV (cd RepositorioTestePDV)
+7. Ainda no CMD, rode o comando docker-compose up -d (Esse processo demora um pouco)
+8. Após concluído o comando no item 7, verifique no Docker Desktop, se está ativo o container "pdv" (back-end, front-end, postgres e pgadmin)
     OBS: Inicializado os containers com sucesso, a aplicação já está com o servidor todo configurado para rodar o Sistema PDV, não precisa configurar mais nada.
 9. Abra no Navegador http://localhost:8000 e abrirá a tela de login.
 10. Navegue pelo sistema, utilizando o usuário: teste e senha: teste.
