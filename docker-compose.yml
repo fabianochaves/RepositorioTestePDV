@@ -27,7 +27,7 @@ services:
   dcs-postgres:
       build:
         context: .
-        dockerfile: Dockerfile.custom_postgres # Use o Dockerfile personalizado
+        dockerfile: dockerfileRestore # Use o Dockerfile personalizado
       container_name: dcs-postgres
       restart: always
       environment:
