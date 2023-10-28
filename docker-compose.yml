@@ -25,18 +25,20 @@ services:
       - mynetwork
 
   dcs-postgres:
-    image: postgres:15.3-alpine
-    container_name: dcs-postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: 123
-      POSTGRES_USER: pdv
-    ports:
-      - 5432:5432
-    volumes:
-      - ./bd_postgree/postgres:/var/lib/postgresql/data
-    networks:
-      - mynetwork
+      build:
+        context: .
+        dockerfile: Dockerfile.custom_postgres # Use o Dockerfile personalizado
+      container_name: dcs-postgres
+      restart: always
+      environment:
+        POSTGRES_PASSWORD: 123
+        POSTGRES_USER: pdv
+      ports:
+        - 5433:5433
+      volumes:
+        - ./bd_postgree/postgres:/var/lib/postgresql/data
+      networks:
+        - mynetwork
 
   dcs-pgadmin:
     image: dpage/pgadmin4:latest
@@ -53,6 +55,38 @@ services:
       - ./bd_postgree/pgadmin:/var/lib/pgadmin
     networks:
       - mynetwork
-      
+
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin
+  #   ports:
+  #     - 8080:80
+  #   environment:
+  #     - PMA_HOST=mysql
+  #     - UPLOAD_LIMIT=300M
+  #     - UPLOAD_MAX_FILE_SIZE=300M
+  #     - POST_MAX_SIZE=300M
+  #     - PHP_MEMORY_LIMIT=-1
+  #   depends_on:
+  #     - mysql
+  #   networks:
+  #     - mynetwork
+
+  # mysql:  
+  #   image: mysql:5.7
+  #   ports:
+  #     - 3306:3306
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: ""
+  #     MYSQL_DATABASE: "pdv"
+  #     MYSQL_USER: "pdv"
+  #     MYSQL_PASSWORD: "123"
+  #     MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+  #     MYSQL_MAX_ALLOWED_PACKET: "256M"
+  #   command: --sql-mode="NO_ENGINE_SUBSTITUTION"
+  #   volumes:
+  #     - ./mysql-data:/var/lib/mysql
+  #   networks:
+  #     - mynetwork
+
 networks:
   mynetwork:
