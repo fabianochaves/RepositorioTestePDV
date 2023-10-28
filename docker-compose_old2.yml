@@ -25,20 +25,18 @@ services:
       - mynetwork
 
   dcs-postgres:
-      build:
-        context: .
-        dockerfile: dockerfileRestore # Use o Dockerfile personalizado
-      container_name: dcs-postgres
-      restart: always
-      environment:
-        POSTGRES_PASSWORD: 123
-        POSTGRES_USER: pdv
-      ports:
-        - 5433:5432
-      volumes:
-        - ./bd_postgree/postgres:/var/lib/postgresql/data
-      networks:
-        - mynetwork
+    image: postgres:15.3-alpine
+    container_name: dcs-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: pdv
+    ports:
+      - 5432:5432
+    volumes:
+      - ./bd_postgree/postgres:/var/lib/postgresql/data
+    networks:
+      - mynetwork
 
   dcs-pgadmin:
     image: dpage/pgadmin4:latest

@@ -5,4 +5,4 @@ FROM postgres:15.3-alpine
 RUN mkdir -p /docker-entrypoint-initdb.d/backup
 
 # Copie o arquivo de backup para a pasta de inicialização
-COPY bd_postgree/pgadmin/storage/fabianochavesg_gmail.com/db-postgre-pdv.tar /docker-entrypoint-initdb.d/backup/
+COPY backup/db-postgre-pdv.tar /docker-entrypoint-initdb.d/backup/
