@@ -5,6 +5,7 @@ Observações Gerais:
 
     a) O código-fonte desse repositório está dentro da pasta app, separado o back-end e o front-end.
     b) O repositório está com arquivos e configurações prontas para inicializar os containers no Docker e rodar a aplicação, basta seguir os passos abaixo.
+    c) Caso necessário, o pgdump do Banco de Dados está no arquivo zipado "db-postgre-pdv.tar"
 
 Passos para rodar o sistema.
 
