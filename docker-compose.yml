@@ -34,7 +34,7 @@ services:
         POSTGRES_PASSWORD: 123
         POSTGRES_USER: pdv
       ports:
-        - 5433:5433
+        - 5433:5432
       volumes:
         - ./bd_postgree/postgres:/var/lib/postgresql/data
       networks:
