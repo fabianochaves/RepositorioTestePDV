@@ -1,8 +1,0 @@
-# Use a imagem base do PostgreSQL
-FROM postgres:15.3-alpine
-
-# Crie um diretório para armazenar o arquivo de backup
-RUN mkdir -p /docker-entrypoint-initdb.d/backup
-
-# Copie o arquivo de backup para a pasta de inicialização
-COPY bd_postgree/pgadmin/storage/fabianochavesg_gmail.com/db-postgre-pdv.tar /docker-entrypoint-initdb.d/backup/
