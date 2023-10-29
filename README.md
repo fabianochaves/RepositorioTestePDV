@@ -3,9 +3,9 @@ Sistema PDV - Teste
 
 Observações Gerais:
 
-1. Seguindo os passos abaixo para rodar o sistema, as configurações criadas para o Docker farão todas as configurações necessárias:
+1. Seguindo os passos abaixo para rodar o sistema, as configurações criadas para o Docker farão o seguinte:
 
-    1.1. Criará o servidor Apache back-end;
+    1.1. Criará o servidor Apache back-end com PHP 7.4;
 
     1.2. Criará o front-end;
 
