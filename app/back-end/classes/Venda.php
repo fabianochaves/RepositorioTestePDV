@@ -99,8 +99,8 @@ class Venda
                 $qtd_produto_venda = $item['quantidade'];
                 $valor_unitario_venda = str_replace(',', '.', str_replace('.', '', $item['valor_unitario']));
                 $imposto_produto_venda = $item['percent_imposto'];
-                $total_produto_venda = str_replace(',', '.', str_replace('.', '', $item['valor_total_produto']));
-                $total_imposto_venda = str_replace(',', '.', str_replace('.', '', $item['valor_imposto']));
+                $total_produto_venda = $item['valor_total_produto'];
+                $total_imposto_venda = $item['valor_imposto'];
                 $status_item_venda = 1;
 
                 $stmt = $this->conn->prepare("

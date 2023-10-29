@@ -372,10 +372,11 @@ vm = new Vue({
                             $("#valor_unitario").val(this.formatarNumero(dadosProduto[0].preco_venda_produto));
 
                             var valor_total_produto = parseFloat(dadosProduto[0].preco_venda_produto) * parseFloat(quantidade_produto);
-                            var valor_total_produto = this.formatarNumero(valor_total_produto);
 
                             var valor_total_imposto = parseFloat(valor_total_produto) * parseFloat(dadosProduto[0].imposto_tipo_produto / 100);
                             var valor_total_imposto = this.formatarNumero(valor_total_imposto);
+
+                            var valor_total_produto = this.formatarNumero(valor_total_produto);
 
                             $("#valor_imposto").val(valor_total_imposto);
                             $("#valor_total_produto").val(valor_total_produto);
