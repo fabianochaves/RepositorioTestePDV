@@ -54,15 +54,15 @@ services:
     networks:
       - mynetwork
 
-    restore-service:
-      build:
-        context: .
-        dockerfile: dockerfileRestore # Use o Dockerfile personalizado
-      depends_on:
-        - dcs-postgres
-      volumes:
-        - ./bd_postgree/pgadmin/storage/fabianochavesg_gmail.com/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
-      command: sh -c "pg_restore -h dcs-postgres -U pdv -d pdv /restore/db-postgre-pdv.tar"
+  restore-service:
+    build:
+      context: .
+      dockerfile: dockerfileRestore # Use o Dockerfile personalizado
+    depends_on:
+      - dcs-postgres
+    volumes:
+      - ./bd_postgree/pgadmin/storage/fabianochavesg_gmail.com/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
+    command: sh -c "pg_restore -h dcs-postgres -U pdv -d pdv /restore/db-postgre-pdv.tar"
 
   # phpmyadmin:
   #   image: phpmyadmin/phpmyadmin
