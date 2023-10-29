@@ -60,7 +60,7 @@ services:
       dockerfile: dockerfileRestore
     volumes:
       - ./backup/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
-    command: sh -c "dockerize -wait tcp://dcs-postgres:5432 -timeout 60s && sleep 20 && pg_restore -h dcs-postgres -U pdv -d pdv -W /restore/db-postgre-pdv.tar"
+    command: sh -c "dockerize -wait tcp://dcs-postgres:5432 -timeout 60s && sleep 20 && PGPASSWORD=123 pg_restore -h dcs-postgres -U pdv -d pdv /restore/db-postgre-pdv.tar"
     depends_on:
       - dcs-postgres
       - dcs-pgadmin
