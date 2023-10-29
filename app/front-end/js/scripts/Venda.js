@@ -27,6 +27,7 @@ vm = new Vue({
             const formatter = new Intl.NumberFormat('pt-BR', {
                 style: 'decimal',
                 minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
             });
             return formatter.format(numero);
         },
@@ -371,9 +372,13 @@ vm = new Vue({
                             $("#valor_unitario").val(this.formatarNumero(dadosProduto[0].preco_venda_produto));
 
                             var valor_total_produto = parseFloat(dadosProduto[0].preco_venda_produto) * parseFloat(quantidade_produto);
+                            var valor_total_produto = this.formatarNumero(valor_total_produto);
+
                             var valor_total_imposto = parseFloat(valor_total_produto) * parseFloat(dadosProduto[0].imposto_tipo_produto / 100);
-                            $("#valor_imposto").val(this.formatarNumero(valor_total_imposto));
-                            $("#valor_total_produto").val(this.formatarNumero(valor_total_produto));
+                            var valor_total_imposto = this.formatarNumero(valor_total_imposto);
+
+                            $("#valor_imposto").val(valor_total_imposto);
+                            $("#valor_total_produto").val(valor_total_produto);
 
                         }
                     })

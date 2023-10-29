@@ -37,6 +37,7 @@ vm = new Vue({
             const formatter = new Intl.NumberFormat('pt-BR', {
                 style: 'decimal',
                 minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
             });
             return formatter.format(numero);
         },
