@@ -3,8 +3,12 @@ Sistema PDV - Teste
 
 Observações Gerais:
 
-    a) O código-fonte desse repositório está dentro da pasta app, separado o back-end e o front-end.
-    b) O repositório está com arquivos e configurações prontas para inicializar os containers no Docker e rodar a aplicação, basta seguir os passos abaixo.
+1. Seguindo os passos abaixo para rodar o sistema, as configurações criadas para o docker fará todas as configurações necessárias:
+    -> Criará o servidor apache back-end;
+    -> Criará o front-end;
+    -> Criará o banco de dados Postgres;
+    -> Criará a p PGadmin;
+    -> Exportará automaticamente o backup da base de dados para o banco Postgres.
 
 Passos para rodar o sistema.
 
@@ -28,10 +32,10 @@ Instruções caso não consiga logar no sistema:
 Instruções caso não consiga rodar com o docker:
 
 Caso não consiga rodar no docker:
-1. Os fontes estão na pasta app 
-2. O backup do banco de dados está no caminho: backup/db-postgre-pdv.tar
-3. Lembrando, que com o docker, a aplicação está lendo a pasta app/front-end como raiz.
-4. No arquivo app/front-end/config.js está setada a variável urlBackEnd, que no caso se rodar manual, terá que mudar para "../back-end".
+1. Os fontes estão na pasta "app/"
+2. O backup do banco de dados está no caminho: "backup/db-postgre-pdv.tar"
+3. Lembrando, que com o docker, a aplicação está lendo a pasta "app/front-end" como raiz.
+4. No arquivo "app/front-end/config.js" está setada a variável "urlBackEnd", que no caso se rodar manual, terá que mudar para "../back-end".
 
 Acessos:
 
