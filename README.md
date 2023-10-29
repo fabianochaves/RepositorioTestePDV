@@ -13,7 +13,7 @@ Observações Gerais:
 
     1.4. Criação do PGadmin;
 
-    1.5. Exportará automaticamente o backup da base de dados para o banco Postgres.
+    1.5. Exportação automaticama do backup da base de dados para o banco Postgres.
 
 
 Passos para rodar o sistema.
