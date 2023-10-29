@@ -51,4 +51,8 @@ Acessos:
 3. PGAdmin: http://localhost:8080 -> usuario: fabianochavesg@gmail.com e senha: 123
 4. Postgres: Porta: 5432, usuário: pdv, senha: 123
 
+Observação Final:
+
+1. Atualmente, o sistema ainda não está validando sessão de usuário logado.
+
 
