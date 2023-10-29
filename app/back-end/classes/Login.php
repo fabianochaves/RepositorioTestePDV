@@ -46,7 +46,6 @@ class Login {
                     "status" => 1,
                     "sessao" => $_SESSION['user']
                 );
-
        
             } else {
                 throw new Exception('Usuário e/ou senha inválidos');

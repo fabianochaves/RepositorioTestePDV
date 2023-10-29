@@ -8,7 +8,6 @@ class Venda
         $this->conn = $conn;
     }
 
-    
     public function verItens($dados)
     {
         if (!isset($this->conn)) {
@@ -35,7 +34,6 @@ class Venda
             "status" => 1,
             "itens" => $itens
         );
-
 
         return $response;
     }
@@ -73,7 +71,6 @@ class Venda
     }
 
     public function cadastrar($dados){
-
 
             $datetime_venda = date('Y-m-d H:i:s');
             $valor_total_venda = $dados['totalValorVenda'];
@@ -124,7 +121,6 @@ class Venda
     
             }
 
-
             $response = array(
                 "status" => 1,
                 "message" => "Salvo com Sucesso!"
@@ -132,7 +128,6 @@ class Venda
 
             return $response;
 
-       
     }
     
     public function carregarDadosVenda()
@@ -192,6 +187,4 @@ class Venda
         return $form;
     }
 
-
-    
 }

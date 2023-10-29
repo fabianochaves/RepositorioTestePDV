@@ -64,9 +64,12 @@ class Tipos
                 "status" => 1,
                 "message" => "Atualizado com Sucesso!"
             );
+
         } catch (PDOException $e) {
             throw new PDOException("Erro ao Atualizar o Status: " . $e->getMessage());
         }
+
+        return $response;
     }
 
     public function listar()
