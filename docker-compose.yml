@@ -61,7 +61,7 @@ services:
     depends_on:
       - dcs-postgres
     volumes:
-      - ./bd_postgree/pgadmin/storage/fabianochavesg_gmail.com/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
+      - ./backup/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
     command: sh -c "pg_restore -h dcs-postgres -U pdv -d pdv /restore/db-postgre-pdv.tar"
 
   # phpmyadmin:
