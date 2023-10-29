@@ -66,6 +66,8 @@ services:
       - dcs-pgadmin
     networks:
       - mynetwork
+    #Remove o container do Restore após ser concluído
+    entrypoint: tail -f /dev/null
 
   # phpmyadmin:
   #   image: phpmyadmin/phpmyadmin
