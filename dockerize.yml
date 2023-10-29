@@ -1,0 +1,13 @@
+version: "3.0"
+services:
+  restore-service:
+    build:
+      context: .
+      dockerfile: dockerfileRestore
+    volumes:
+      - ./backup/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
+    command: sh -c "dockerize -wait tcp://dcs-postgres:5432 -timeout 60s && pg_restore -h dcs-postgres -U pdv -d pdv /restore/db-postgre-pdv.tar"
+    depends_on:
+      - dcs-postgres
+    networks:
+      - mynetwork

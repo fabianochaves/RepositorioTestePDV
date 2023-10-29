@@ -55,16 +55,7 @@ services:
       - mynetwork
 
   restore-service:
-    build:
-      context: .
-      dockerfile: dockerfileRestore # Use o Dockerfile personalizado
-    depends_on:
-        - dcs-postgres
-        - dcs-pgadmin
-    volumes:
-      - ./backup/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
-    command: sh -c "/wait-for-services.sh && pg_restore -h dcs-postgres -U pdv -d pdv /restore/db-postgre-pdv.tar"
-
+    <<: *restore-service
 
   # phpmyadmin:
   #   image: phpmyadmin/phpmyadmin
