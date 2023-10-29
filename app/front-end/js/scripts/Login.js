@@ -23,7 +23,7 @@ vm = new Vue({
                         if (data.status == 1) {
                             location.href = "home"
                         } else {
-                            alerta("error", "Atenção!", data, "", 0, 0);
+                            alerta("error", "Atenção!", data.body, "", 0, 0);
                         }
 
                         return false;
