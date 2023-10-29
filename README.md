@@ -5,13 +5,13 @@ Observações Gerais:
 
 1. Seguindo os passos abaixo para rodar o sistema, as configurações criadas para o Docker farão o seguinte:
 
-    1.1. Criará o servidor Apache back-end com PHP 7.4;
+    1.1. Criação do servidor Apache back-end com PHP 7.4;
 
-    1.2. Criará o front-end;
+    1.2. Criação do front-end;
 
-    1.3. Criará o banco de dados Postgres;
+    1.3. Criação do banco de dados Postgres;
 
-    1.4. Criará o PGadmin;
+    1.4. Criação do PGadmin;
 
     1.5. Exportará automaticamente o backup da base de dados para o banco Postgres.
 
