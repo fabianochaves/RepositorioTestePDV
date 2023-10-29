@@ -3,12 +3,18 @@ Sistema PDV - Teste
 
 Observações Gerais:
 
-1. Seguindo os passos abaixo para rodar o sistema, as configurações criadas para o docker fará todas as configurações necessárias:
-    -> Criará o servidor apache back-end;
-    -> Criará o front-end;
-    -> Criará o banco de dados Postgres;
-    -> Criará a p PGadmin;
-    -> Exportará automaticamente o backup da base de dados para o banco Postgres.
+1. Seguindo os passos abaixo para rodar o sistema, as configurações criadas para o Docker farão todas as configurações necessárias:
+
+    1.1. Criará o servidor Apache back-end;
+
+    1.2. Criará o front-end;
+
+    1.3. Criará o banco de dados Postgres;
+
+    1.4. Criará o PGadmin;
+
+    1.5. Exportará automaticamente o backup da base de dados para o banco Postgres.
+
 
 Passos para rodar o sistema.
 
