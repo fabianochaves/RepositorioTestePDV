@@ -1,6 +1,14 @@
 # Use a imagem base do PostgreSQL
 FROM postgres:15.3-alpine
 
+# Instale as ferramentas necessárias (wget e tar)
+RUN apk --no-cache add wget tar
+
+# Faça o download e instale o utilitário dockerize
+RUN wget https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize-linux-amd64-v0.6.1.tar.gz \
+    && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-v0.6.1.tar.gz \
+    && rm dockerize-linux-amd64-v0.6.1.tar.gz
+
 # Crie um diretório para armazenar o arquivo de backup
 RUN mkdir -p /docker-entrypoint-initdb.d/backup
 
