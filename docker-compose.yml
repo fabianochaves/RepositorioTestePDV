@@ -63,7 +63,8 @@ services:
         - dcs-pgadmin
     volumes:
       - ./backup/db-postgre-pdv.tar:/restore/db-postgre-pdv.tar
-    command: ["wait-for-services.sh"]
+    command: sh -c "/wait-for-services.sh && pg_restore -h dcs-postgres -U pdv -d pdv /restore/db-postgre-pdv.tar"
+
 
   # phpmyadmin:
   #   image: phpmyadmin/phpmyadmin
