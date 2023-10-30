@@ -3,9 +3,9 @@ Sistema PDV - Teste
 
 1. Buscando facilitar a execução do sistema, em resumo basta seguir 3 passos:
 
-    1.1. Docker instalado e rodando no seu computador.
+    1.1. Docker Desktop instalado e rodando no seu computador "https://www.docker.com/products/docker-desktop/".
 
-    1.2. Clonar o repositório.
+    1.2. Clonar o repositório "git clone https://github.com/fabianochaves/RepositorioTestePDV.git".
 
     1.3. No Terminal, na raiz da pasta clonada, subir os containers do Docker, utilizando o comando "docker-compose up -d".
 
@@ -19,7 +19,7 @@ Sistema PDV - Teste
 
 2. Passos para rodar o sistema.
 
-    2.1. Download do Docker Desktop, caso ainda não possua: https://www.docker.com/products/docker-desktop/.
+    2.1. Download do Docker Desktop, caso ainda não possua: "https://www.docker.com/products/docker-desktop/".
 
     2.2. Deixe o Docker Desktop inicializado em sua máquina.
 
