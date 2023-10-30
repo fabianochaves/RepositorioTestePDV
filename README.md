@@ -7,7 +7,7 @@ Sistema PDV - Teste
 
     1.2. Clonar o repositório "git clone https://github.com/fabianochaves/RepositorioTestePDV.git".
 
-    1.3. No Terminal, na raiz da pasta clonada, subir os containers do Docker, utilizando o comando "docker-compose up -d".
+    1.3. Abra o Terminal na raiz da pasta clonada, e suba os containers do Docker, utilizando o comando "docker-compose up -d".
 
     1.4. Acesse http://localhost:8000, utilize o usuário e senha "teste" para iniciar a navegação na tela de login.
 
