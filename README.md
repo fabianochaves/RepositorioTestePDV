@@ -7,12 +7,14 @@ Sistema PDV - Teste
 
     1.2. Clonar o repositório.
 
-    1.3. No Terminal, na raiz da pasta clonada, subir os containers do Docker, utilizando o comando "docker-compose up -d"
+    1.3. No Terminal, na raiz da pasta clonada, subir os containers do Docker, utilizando o comando "docker-compose up -d".
 
-    Pronto, com isso o sistema estará em operação, podendo ser acessado no http://localhost:8000
+    1.4. Acesse http://localhost:8000, utilize o usuário e senha "teste" para iniciar a navegação na tela de login.
 
-    Abaixo segue as explicações mais detalhadas.
-
+    Pronto, com isso o sistema estará em operação, com o front-end, back-end e banco de dados prontos.
+    
+    Nos próximos tópicos segue explicações mais detalhadas.
+    
 ############################################################
 
 2. Passos para rodar o sistema.
