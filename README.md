@@ -49,7 +49,7 @@ Sistema PDV - Teste
 
 3. Seguindo os passos acima para rodar o sistema, as configurações criadas para o Docker farão o seguinte:
 
-    3.1. Criação do servidor Apache back-end com PHP 7.4;
+    3.1. Criação do servidor Apache back-end com PHP 7.4
 
     3.2. Criação do front-end;
 
@@ -58,6 +58,8 @@ Sistema PDV - Teste
     3.4. Criação do PGadmin;
 
     3.5. Exportação automatica do backup da base de dados para o banco Postgres.
+
+    OBS: As configurações citadas acima, poderão ser vistar nos arquivos docker-compose.yml, dockerfile, dockerfileRestore e dockerize.yml
 
 ############################################################
 
