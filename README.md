@@ -1,7 +1,6 @@
 # PDV
 Sistema PDV - Teste
 
-############################################################
 Observações Gerais:
 
 1. Buscando facilitar a execução do sistema, em resumo basta seguir 3 passos:
@@ -84,7 +83,7 @@ Observações Gerais:
     6.2. Back-End: http://localhost:8001 -> Sem acesso via Browser.
 
     6.3. PGAdmin: http://localhost:8080 -> usuario: fabianochavesg@gmail.com e senha: 123
-    
+
     6.4. Postgres: Porta: 5432, usuário: pdv, senha: 123
 
 ############################################################
