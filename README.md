@@ -41,7 +41,9 @@ Sistema PDV - Teste
 
     2.10. Navegue pelo sistema, utilizando o usuário: teste e senha: teste.
 
-    2.11. Para acessar o PGAdmin, acesse http://localhost:8080, usuario: fabianochavesg@gmail.com e senha: 123. Para acessar o banco de dados "pdv", utilize o usuário: pdv e senha: 123.
+    2.11. Para acessar o PGAdmin, acesse http://localhost:8080, usuario: fabianochavesg@gmail.com e senha: 123. 
+    
+    2.12.No PGAdmin, para acessar o banco de dados "pdv", utilize o usuário: pdv e senha: 123.
 
 ############################################################
 
