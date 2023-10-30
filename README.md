@@ -1,9 +1,8 @@
 # PDV
 Sistema PDV - Teste
 
-Observações Gerais:
-
 1. Buscando facilitar a execução do sistema, em resumo basta seguir 3 passos:
+
     1.1. Docker instalado e rodando no seu computador.
 
     1.2. Clonar o repositório.
